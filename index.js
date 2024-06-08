@@ -29,9 +29,9 @@ var modelo = {
             //locais do navio
             var index = navio.localizacoes.indexOf(palpite);
             if (navio.acertos[index] === "acertou") {
-				visualizacao.mostrarMensagem("Você já acertou essa localização!");
-				return true;
-			} else if(index >= 0){
+		visualizacao.mostrarMensagem("Você já acertou essa localização!");
+		return true;
+	    } else if(index >= 0){
                 //se passar o palpite tá no array e 
                 //acertou o navio
                 navio.acertos[index] = "acertou";
